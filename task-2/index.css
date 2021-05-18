@@ -1,0 +1,32 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: 200px 200px;
+    grid-template-areas: 
+        "red blue"
+        "green blue";
+}
+
+.red, .green, .blue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 50px;
+    color: aliceblue;
+}
+ 
+.red {
+    background: #900;
+    grid-area: red;
+}
+    
+.green {
+    background: #090;
+    grid-area: green;
+}
+
+.blue {
+    background: #009;
+    grid-area: blue;
+}
